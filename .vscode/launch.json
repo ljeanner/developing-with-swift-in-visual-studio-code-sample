@@ -7,9 +7,9 @@
                 "swift"
             ],
             "args": [],
-            "cwd": "${workspaceFolder:sample-mongo-project}",
+            "cwd": "${workspaceFolder:calculator-ios-app}",
             "name": "Debug sample-project",
-            "program": "${workspaceFolder:sample-mongo-project}/.build/debug/sample-project",
+            "program": "${workspaceFolder:calculator-ios-app}/.build/debug/sample-project",
             "preLaunchTask": "swift: Build Debug sample-project"
         },
         {
@@ -19,9 +19,9 @@
                 "swift"
             ],
             "args": [],
-            "cwd": "${workspaceFolder:sample-mongo-project}",
+            "cwd": "${workspaceFolder:calculator-ios-app}",
             "name": "Release sample-project",
-            "program": "${workspaceFolder:sample-mongo-project}/.build/release/sample-project",
+            "program": "${workspaceFolder:calculator-ios-app}/.build/release/sample-project",
             "preLaunchTask": "swift: Build Release sample-project"
         }
     ]
