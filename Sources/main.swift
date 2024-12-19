@@ -1,78 +1,31 @@
-import Foundation
-
-func add(a: Double, b: Double) -> Double {
-    return a + b
-}
-
-// Subtraction
-func subtract(a: Double, b: Double) -> Double {
-    return a - b
-}
-
-// Multiplication
-func multiply(a: Double, b: Double) -> Double {
-    return a * b
-}
-
-// Division
-func divide(a: Double, b: Double) -> Double {
-    return a / b
-}
-
-
-func getInput() -> (Double, Double)? {
-    print("Enter first number: ", terminator: "")
-    guard let firstInput = readLine(), let firstNumber = Double(firstInput) else {
-        print("Invalid input")
-        return nil
+class Calculator {
+    func add(_ a: Double, _ b: Double) -> Double {
+        return a + b
     }
     
-    print("Enter second number: ", terminator: "")
-    guard let secondInput = readLine(), let secondNumber = Double(secondInput) else {
-        print("Invalid input")
-        return nil
+    func subtract(_ a: Double, _ b: Double) -> Double {
+        return a - b
     }
     
-    return (firstNumber, secondNumber)
-}
-
-func main() {
-    print("Simple Calculator")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
-    print("Enter your choice: ", terminator: "")
-    
-    guard let choice = readLine(), let operation = Int(choice) else {
-        print("Invalid choice")
-        return
+    func multiply(_ a: Double, _ b: Double) -> Double {
+        return a * b
     }
     
-    guard let (a, b) = getInput() else {
-        return
-    }
-    
-    let result: Double?
-    
-    switch operation {
-    case 1:
-        result = add(a, b)
-    case 2:
-        result = subtract(a, b)
-    case 3:
-        result = multiply(a, b)
-    case 4:
-        result = divide(a, b)
-    default:
-        print("Invalid operation")
-        return
-    }
-    
-    if let result = result {
-        print("Result: \(result)")
+    func divide(_ a: Double, _ b: Double) -> Double? {
+        guard b != 0 else {
+            return nil // Handle division by zero
+        }
+        return a / b
     }
 }
 
-
-main()
+// Example usage
+let calculator = Calculator()
+print("Addition: \(calculator.add(5, 3))") // 8
+print("Subtraction: \(calculator.subtract(5, 3))") // 2
+print("Multiplication: \(calculator.multiply(5, 3))") // 15
+if let divisionResult = calculator.divide(5, 0) {
+    print("Division: \(divisionResult)")
+} else {
+    print("Division by zero is not allowed.")
+}
