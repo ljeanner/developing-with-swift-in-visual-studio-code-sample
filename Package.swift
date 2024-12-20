@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "ios-project",
      dependencies: [
-        // Add a vulnerable version of a dependency
-        .package(url: "https://github.com/vulnerable/library.git", from: "1.0.0"),
+        // Add a vulnerable version of Alamofire
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.8.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
