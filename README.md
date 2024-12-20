@@ -23,9 +23,9 @@ This project is a simple calculator application developed in Swift. The purpose 
 - When you open the project, you should see a prompt to reopen the project in a container. Click on "Reopen in Container".
 - If you don't see the prompt, you can manually reopen in the container by pressing F1 and selecting Remote-Containers: Reopen in Container.
 
-3. Run the Swift Code:
+3. **Run the Swift Code**:
 
 Once the dev container is set up, open the integrated terminal in Visual Studio Code.
 Navigate to the directory containing your Swift files, if not already there and run : 
 
-``` swift run 
+```swift run 
