@@ -23,6 +23,24 @@
             "name": "Release sample-project",
             "program": "${workspaceFolder:calculator-ios-app}/.build/release/sample-project",
             "preLaunchTask": "swift: Build Release sample-project"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:calculator-ios-app}",
+            "name": "Debug ios-project",
+            "program": "${workspaceFolder:calculator-ios-app}/.build/debug/ios-project",
+            "preLaunchTask": "swift: Build Debug ios-project"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:calculator-ios-app}",
+            "name": "Release ios-project",
+            "program": "${workspaceFolder:calculator-ios-app}/.build/release/ios-project",
+            "preLaunchTask": "swift: Build Release ios-project"
         }
     ]
 }
