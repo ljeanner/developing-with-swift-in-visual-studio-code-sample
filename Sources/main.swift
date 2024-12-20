@@ -12,9 +12,6 @@ class Calculator {
     }
     
     func divide(_ a: Double, _ b: Double) -> Double? {
-        guard b != 0 else {
-            return nil // Handle division by zero
-        }
         return a / b
     }
 }
