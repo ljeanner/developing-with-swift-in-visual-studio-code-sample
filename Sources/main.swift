@@ -17,7 +17,27 @@ class Calculator {
         }
         return a / b
     }
+
+    // Add scientific function for logarithms, exponentials, and trigonometric functions.
+    func log(_ a: Double) -> Double {
+        return log(a)
+    }
+
+    func exp(_ a: Double) -> Double {
+        return exp(a)
+    }
+
+    func sin(_ a: Double) -> Double {
+        return sin(a)
+    }
+
+    func cos(_ a: Double) -> Double {
+        return cos(a)
+    }
 }
+
+
+
 
 // Example usage
 let calculator = Calculator()
